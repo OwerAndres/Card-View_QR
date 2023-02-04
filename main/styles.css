@@ -1,0 +1,105 @@
+:root{
+   --white: #ffffff;
+   --Light-Gray: #d6e2f0;
+   --Grayish-blue: #7b879d;
+   --Dark-Blue: #1f3251;
+
+   /*Font*/
+   --Outfit: 'Outfit', sans-serif;
+}
+
+body p{
+    font-family: var(--Outfit);
+    font-size: 15px;
+}
+
+body{
+    background-color: var(--Light-Gray);
+    height: 100vh;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+.general{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.card{
+   background-color: var(--white);
+    width: 30%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.QR{
+    width: auto;
+    height: 60%;
+    margin: 6%;
+}
+
+.QR img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.text{
+    margin: 6%;
+}
+
+.text h2{
+    color: var(--Dark-Blue);
+    font-family: var(--Outfit);
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+
+.text p{
+    color: var(--Grayish-blue);
+    line-height: 130%;
+    font-size: 21px;
+    margin-top: 5%;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 15%;
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 499px) {
+    .card{
+        width: 80%;
+    }
+
+    .text h2{
+        font-size: 20px;
+    }
+
+    .text p{
+        font-size: 15px;
+        margin-top: 7%;
+        margin-left: 2%;
+
+    }
+
+
+
+}
